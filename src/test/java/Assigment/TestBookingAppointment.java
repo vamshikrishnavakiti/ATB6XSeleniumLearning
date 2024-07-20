@@ -20,7 +20,7 @@ public class TestBookingAppointment {
         String demoIsrPw= driver.findElement(By.xpath("//input[@value='ThisIsNotAPassword']")).getText();
         System.out.println(demoUsrName);
         Thread.sleep(3000);
-        /*driver.findElement(By.xpath("//input[@name='username']")).sendKeys(demoUsrName);
+        driver.findElement(By.xpath("//input[@name='username']")).sendKeys(demoUsrName);
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys(demoIsrPw);
         driver.findElement(By.id("btn-login")).click();
 
@@ -38,7 +38,7 @@ String conText=    driver.findElement(By.xpath("//div[@class='col-xs-12 text-cen
         System.out.println(conText);
         Assert.assertEquals(conText,"Appointment Confirmation");
       Thread.sleep(2000);
-      driver.close();*/
+      driver.close();
 
     }
 }
